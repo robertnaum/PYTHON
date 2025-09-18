@@ -5,7 +5,8 @@ endpoint = "https://rnaum-mc3pq8v9-eastus2.cognitiveservices.azure.com/"
 model_name = "model-router"
 deployment = "model-router"
 
-subscription_key = "6KwsENy4DzXUxD5jGM7lQYeurDOd86DrhTWskH0feol31j5j8bSbJQQJ99BFACHYHv6XJ3w3AAAAACOGOmbd"
+#put in a subscription key
+subscription_key = ""
 api_version = "2024-12-01-preview"
 
 client = AzureOpenAI(
