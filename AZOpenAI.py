@@ -6,7 +6,7 @@ model_name = "model-router"
 deployment = "model-router"
 
 #put in a subscription key
-subscription_key = ""
+subscription_key = os.environ.get("AZURE_SUBSCRIPTION_KEY")
 api_version = "2024-12-01-preview"
 
 client = AzureOpenAI(
