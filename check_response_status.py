@@ -1,0 +1,26 @@
+import requests
+
+response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
+print("Status Code:", response.status_code, end='\n\n')
+print("Content:", response.content, end='\n\n')
+print("Json:", response.json, end='\n\n')
+print("headers:", response.headers, end='\n\n')
+print("url:", response.url, end='\n\n')
+print("encoding:", response.encoding, end='\n\n')
+print("cookies:", response.cookies, end='\n\n')
+print("elapsed:", response.elapsed, end='\n\n')
+print("reason:", response.reason, end='\n\n')
+print("OK:", response.ok, end='\n\n')
+
+# generates a 404, bad url
+response = requests.get("https://jsonplaceholder.typicode.com/postszzz/1")
+print("Status Code:", response.status_code, end='\n\n')
+print("Content:", response.content, end='\n\n')
+print("Json:", response.json, end='\n\n')
+print("headers:", response.headers, end='\n\n')
+print("url:", response.url, end='\n\n')
+print("encoding:", response.encoding, end='\n\n')
+print("cookies:", response.cookies, end='\n\n')
+print("elapsed:", response.elapsed, end='\n\n')
+print("reason:", response.reason, end='\n\n')
+print("OK:", response.ok, end='\n\n')
