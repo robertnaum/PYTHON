@@ -3,14 +3,6 @@
 <head>
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -25,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_558df15b295e6da3ba62bba0dc11efbf {
+                #map_3ac584bf7776e99d1d4e5533af54b2fd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -34,19 +26,42 @@
                 }
                 .leaflet-container { font-size: 1rem; }
             </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
         
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_558df15b295e6da3ba62bba0dc11efbf" ></div>
+            <div class="folium-map" id="map_3ac584bf7776e99d1d4e5533af54b2fd" ></div>
         
 </body>
 <script>
     
     
-            var map_558df15b295e6da3ba62bba0dc11efbf = L.map(
-                "map_558df15b295e6da3ba62bba0dc11efbf",
+            var map_3ac584bf7776e99d1d4e5533af54b2fd = L.map(
+                "map_3ac584bf7776e99d1d4e5533af54b2fd",
                 {
                     center: [37.7749, -122.4194],
                     crs: L.CRS.EPSG3857,
@@ -63,7 +78,7 @@
 
         
     
-            var tile_layer_e3020d15ee97fd9d149909502a907620 = L.tileLayer(
+            var tile_layer_e1d4dc252c94230c683dbc3219d668f2 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -80,27 +95,27 @@
             );
         
     
-            tile_layer_e3020d15ee97fd9d149909502a907620.addTo(map_558df15b295e6da3ba62bba0dc11efbf);
+            tile_layer_e1d4dc252c94230c683dbc3219d668f2.addTo(map_3ac584bf7776e99d1d4e5533af54b2fd);
         
     
-            var circle_marker_ca6c4abff92eb0efa0f9523c8f08c960 = L.circleMarker(
+            var circle_marker_c72897f24f5ea881dca5cde13feb5fd3 = L.circleMarker(
                 [37.7749, -122.4194],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
-            ).addTo(map_558df15b295e6da3ba62bba0dc11efbf);
+            ).addTo(map_3ac584bf7776e99d1d4e5533af54b2fd);
         
     
-        var popup_515783d5da75dd6a53a98e4cb9c9cc5f = L.popup({
+        var popup_37fb3f9c021171e4ade3f8008b933a0e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a6f4210f2dca35c281066a1c82463944 = $(`<div id="html_a6f4210f2dca35c281066a1c82463944" style="width: 100.0%; height: 100.0%;">San Francisco</div>`)[0];
-                popup_515783d5da75dd6a53a98e4cb9c9cc5f.setContent(html_a6f4210f2dca35c281066a1c82463944);
+                var html_75de1a399888a7f754f30fa9790bcaf2 = $(`<div id="html_75de1a399888a7f754f30fa9790bcaf2" style="width: 100.0%; height: 100.0%;">San Francisco</div>`)[0];
+                popup_37fb3f9c021171e4ade3f8008b933a0e.setContent(html_75de1a399888a7f754f30fa9790bcaf2);
             
         
 
-        circle_marker_ca6c4abff92eb0efa0f9523c8f08c960.bindPopup(popup_515783d5da75dd6a53a98e4cb9c9cc5f)
+        circle_marker_c72897f24f5ea881dca5cde13feb5fd3.bindPopup(popup_37fb3f9c021171e4ade3f8008b933a0e)
         ;
 
         
